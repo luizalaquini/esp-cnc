@@ -18,13 +18,14 @@ void sendGcode(char** data){
       if(Serial.available() > 0){
         // read the incoming string:
         String incomingString = Serial.readStringUntil('\n');
-        // prints the received data
-        //Serial.print("I received: ");
-        //Serial.println(incomingString);
+        // Checks if the string read contains "Idle" which means the last command finished execution
         if(incomingString[1] == 'I' && incomingString[2] == 'd'){ break; } // "Idle"
       }
-      else { Serial.println("?"); }
-      delay(250);
+      else { 
+        //Envia comando para verificar o status da CNC
+        Serial.println("?"); 
+        delay(250);
+      }      
     }
     
   } while(comando != NULL);
