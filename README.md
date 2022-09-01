@@ -21,5 +21,5 @@ The socketio file manages the websocket connection to the server. It is in him t
 
 ### Developers
 - Luiza Batista Laquini (LinkedIn: https://www.linkedin.com/in/luizalaquini/)
-- Guilherme Goes Zanetti: (LinkedIn: https://www.linkedin.com/in/guilherme-goes-zanetti-0429631a2/)
-- Joana Venturin Loureiro
+- Guilherme Goes Zanetti (LinkedIn: https://www.linkedin.com/in/guilherme-goes-zanetti-0429631a2/)
+- Joana Venturin Loureiro (LinkedIn: https://www.linkedin.com/in/joana-venturin-loureiro/)
