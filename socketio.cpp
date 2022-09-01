@@ -75,9 +75,6 @@ void send_socket(String info)
   // Send event
   socket.sendEVENT(output);
 
-
-
-
   //  char msg[300];
   //  String infoTosend = "\"" + info + "\"";
   //

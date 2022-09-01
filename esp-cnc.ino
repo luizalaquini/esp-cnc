@@ -7,6 +7,8 @@ void setup() {
     delay(250);
     init_wifi();
     init_socket();
+    pinMode(LED_BUILTIN, OUTPUT);
+    digitalWrite(LED_BUILTIN, HIGH);
 }
 
 //Conexão do wi-fi
@@ -15,6 +17,12 @@ void loop()
 {
   connection_socket();
   unsigned long currentmillis = millis();
+
+  if(WiFi.status() != WL_CONNECTED){
+    digitalWrite(LED_BUILTIN, HIGH);
+  }else{
+    digitalWrite(LED_BUILTIN, LOW);
+  }
 
   if ((WiFi.status() != WL_CONNECTED) && (currentmillis - previousmillis >= 1000))
   {

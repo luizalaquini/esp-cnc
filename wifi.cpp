@@ -1,7 +1,11 @@
 #include "wifi.h"
 
-const char *ssid = "Luiza";
-const char *password = "ukulele1";
+// Rede UFES: 
+// "LPRM6"
+// "51752927"
+
+const char *ssid = "belkin.fa8";
+const char *password = "ym3ddfed";
 unsigned long previousMillis = 0;
 
 void init_wifi()
