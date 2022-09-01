@@ -8,7 +8,11 @@
 ### Usage
 We are using this code in NodeMCU v3 to communicate our CNC with an online server.
 
-### About
+### Technologies
+- C++
+- Arduino IDE
+
+### Behavior
   The esp was programmed with the arduino IDE and has some files. The file esp-cnc.ino is the main one, which has setup and loop structure and simply initializes wi-fi and socket.io and keeps checking if the internet connection is active (trying to reconnect if there is a problem).
 
 The wifi.cpp file is where we enter the name and password of the wifi network that the esp must connect and also where is the logic for making this connection via the <ESP8266WiFi> library.
